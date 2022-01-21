@@ -21,6 +21,7 @@ if($nome === $lista->getLogin() && password_verify($senha, $senhaHash)){
    header("Location: index.php");
    exit;
 }else{
+   echo "<script type='text/javascript'>alert('Login e senha incorret');</script>";
    header("Location: login.php");
    exit;
 } 
